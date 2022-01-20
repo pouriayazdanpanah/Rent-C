@@ -1,0 +1,186 @@
+@media only screen and (min-width:1601px) and (max-width: 1850px) {}
+
+@media only screen and (min-width:1400px) and (max-width: 1600px) {
+    .hide-button-map{
+        display: none;
+    }
+    .scroll{
+        max-height: 650px;
+        overflow-y: auto
+    }
+}
+
+@media only screen and (min-width:1367px) and (max-width: 1399px) {
+    .hide-button-map{
+        display: none;
+    }
+    .scroll{
+        max-height: 650px;
+        overflow-y: auto
+    }
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    /*.hide-button-map{*/
+    /*    display: none;*/
+    /*}*/
+
+ .scroll{
+        max-height: 650px;
+        overflow-y: auto
+    }
+
+}
+/* ipad pro portrait adn landscape*/
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .scroll{
+        max-height: 650px;
+        overflow-y: auto
+    }
+}
+
+
+
+/* Medium Layout: 1200px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 46%;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 45%;
+    }
+}
+
+
+/* Tablet Layout wide: 768px. */
+@media only screen and (max-width: 770px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 45%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hide-map{
+        display: none;
+    }
+
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 43%;
+    }
+}
+
+
+/* medium tablet layout 599px */
+
+@media only screen and (max-width: 599px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 42%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 40%;
+    }
+}
+
+
+/* mobile tablet layout 414px */
+
+@media only screen and (max-width: 414px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 40%;
+    }
+
+}
+/* iphone x ,xs , 8 */
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3){
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 40%;
+    }
+}
+
+/* mobile tablet layout 375px */
+
+@media only screen and (max-width: 384px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 40%;
+    }
+}
+
+
+/* mobile tablet layout 360px */
+
+@media only screen and (max-width: 360px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 40%;
+    }
+}
+
+
+/* mobile tablet layout 320px */
+
+@media only screen and (max-width: 330px) {
+    .hide-map{
+        display: none;
+    }
+    .fix-button-map{
+        position: sticky;
+        bottom: 80px;
+        left: 38%;
+    }
+}

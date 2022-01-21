@@ -20,22 +20,20 @@ function test(){
 }
 if (! function_exists('get_static_btn_option'))
 {
-    function render_btn($slug , $userId)
+    function render_btn($slug , $userId): string
     {
         $product = Product::whereSlug($slug)->first();
 
         $is_favorite = $product->favorite()->where('user_id', $userId)->get();
 
         if (!($is_favorite->isEmpty())){
-            $out_put = '<h5> <i class="fa fa-bookmark text-secondary pointer" data-type="0" data-slug="'.$slug.'"></i></h5>';
-            return $out_put;
+            return '<h5> <i class="fa fa-bookmark text-secondary pointer" data-type="0" data-slug="'.$slug.'"></i></h5>';
         }
-        $out_put = '<h5> <i class="far fa-bookmark text-secondary pointer" data-type="1" data-slug="'.$slug.'"></i></h5>';
-        return $out_put;
+        return '<h5> <i class="far fa-bookmark text-secondary pointer" data-type="1" data-slug="'.$slug.'"></i></h5>';
     }
 }
 
-function render_image_cover_URL_attachment_id($id)
+function render_image_cover_URL_attachment_id($id): string
 {
 
     $product = Product::find($id);
@@ -48,21 +46,20 @@ function render_image_cover_URL_attachment_id($id)
 
 }
 
-function get_session_user_agent($item)
+function get_session_user_agent($item): string
 {
-    $devise = explode(";",explode(')',explode('(',$item)[1])[0])[0];
-
-    return $devise;
+    return explode(";",explode(')',explode('(',$item)[1])[0])[0];
 }
 
-function is_session_set($item){
+function is_session_set($item): bool
+{
     if (\Illuminate\Support\Facades\Session::getId() === $item){
         return true;
     }
     return false;
 }
 
-function profileImage($userId)
+function profileImage($userId): string
 {
     $user = \App\User::find($userId);
     if (is_null($user->image)){
